@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./ft.css" />
+    <style>
+      section {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        width: fit-content;
+        height: 100px;
+      }
+
+      .d1 {
+        position: relative;
+        width: 100%;
+        height: 40px;
+        background-color: blue;
+      }
+
+      .d2 {
+        position: relative;
+        width: 100%;
+        height: 40px;
+        background-color: red;
+      }
+
+      .d3 {
+        position: relative;
+        width: 100%;
+        height: 40px;
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+<div  class="er">
+
+    <div class="d1">a</div>
+    <div class="d2">s</div>
+    <div class="d3">s</div>
+</div>
+ -->
+
+    <script>
+      //   const people = [
+      //     { name: "bob", age: 20, position: "developer" },
+      //     { name: "ali", age: 30, position: "homemaker" },
+      //     { name: "anna", age: 46, position: "the boss" },
+      //   ];
+
+      //   const neww = people.map((item) => {
+      //     return item;
+      //   });
+      //   //   console.log(neww);
+
+      //   const newpeople = people.map((item) => {
+      //     return {
+      //       firstname: item.name.toUpperCase(),
+
+      //       sen: item.age + 10,
+      //       kar: item.position.toLowerCase(),
+      //     };
+      //   });
+
+      // console.log(newpeople);
+
+      //   const dom = people.map((iteem) => {
+      //     return `<h1>${iteem.name}</h1>`;
+      //   });
+      //   document.body.innerHTML = dom.join("<br>-----------------<br>");
+      //   console.log(dom);
+      //   console.log(people);
+
+      //------------------------------------------------------------------------
+
+      //   const filti = [
+      //     { name: "bob", age: 20, position: "developer" },
+      //     { name: "ali", age: 30, position: "homemaker" },
+      //     { name: "anna", age: 46, position: "the boss" },
+      //   ];
+
+      //   const newf = filti.filter((item) => {
+      //     return item.age <= 30;
+      //   });
+      //   console.log(newf);
+
+      //   const newj = filti.filter((items) => {
+      //     return items.position === "developer";
+      //   });
+      //   console.log(newj);
+
+      //-------------------------------------------------------------------------
+
+      //   const findii = [
+      //     { name: "bob", age: 20, position: "developer", id: 1 },
+      //     { name: "ali", age: 30, position: "homemaker", id: 2 },
+      //     { name: "anna", age: 46, position: "the boss", id: 3 },
+      //   ];
+
+      //   const newfind = findii.find((itti) => {
+      //     return itti.id === 3;
+      //   });
+      //   console.log(newfind.name);
+
+      //   const namee = ["bobby", "peteram", "sussy"];
+      //   console.log(
+      //     namee.find((finn) => {
+      //       return finn == "sussy";
+      //     })
+      //   );
+
+      //   const filterarr=findii.filter((itemss)=>{
+      //     return itemss.id==3;
+
+      //   })
+      //   console.log(filterarr[0].name);//hatman bayad begi sefrebede
+
+      //---------------------------------------------------------------------
+      //       let findiio = [10, 50, 80, 49];
+
+      //       const total = findiio.reduce((acc,current) => {
+      //         // consol.log(a);
+      //         // consol.log(b);
+      //         consol.log(`first:${acc} -----second:${current}`);
+      //         return s=acc + current;
+      //       });
+      //   consol.log(s);
+
+      //   const numbers = [10, 20, 30];
+      // const total = numbers.reduce((acc, currentItem) => {
+      //     return acc + currentItem;
+      // });
+      // console.log(total);
+
+      // console.log(numbers.reduce((acc, currentItem) => {
+      //     return acc + currentItem;
+      // }));
+
+      //---------------------------------------------------------
+      // const numb=[10,20,80,60,3,2];
+      // const flter=numb.filter((numberss,aa)=>{
+      // //  return numberss-1>=10;
+      //  return numberss+aa;
+      // })
+      // console.log(flter);
+      //---------------------------------------------------------------
+      //   const numb = [10, 20, 80, 60, 3, 2];
+      //   const flter = numb.map((numberss) => {
+      //     //  return numberss-1>=10;
+
+      //     console.log('\n\n\n\n');
+      //     return numberss*(2)+'toman';
+
+      //     console.log('\n');
+      //   });
+      //   console.log(flter);
+
+      //-------------------------------------------------------------------
+      //   const numb = [10, 20, 90, 60, 3, 2];
+      //   const flter = numb.find((numberss) => {
+      //     //  return numberss-1>=10;
+
+      //     console.log("\n\n\n\n");
+      //     return numberss > 20;
+
+      //     console.log("\n");
+      //   });
+      //   console.log(flter);
+
+      //-----------------------------------------------------------------
+
+      //   const numbb = [10, 20, 90, 60, 3, , 100, 2];
+      //   let tumn = numbb.filter((nummy) => {
+      //     return nummy > 20;
+      //   });
+
+      //   const dovom = tumn[2];
+      //   console.log(dovom);
+
+      //-------------------------------------------------------------
+
+      //   const numbb = [10, 20, 90, 60, 3, 2];
+      //   let tumn = numbb.reduce((ali,hasan) => {
+      //     return ali +hasan;
+      //   });
+      //   console.log(tumn);
+
+      //-------------------------------------------------------------
+
+      //                 const numbb = [10, 20, 90, 60, 3, 2];
+      // let newam=numbb.reduce((a,b)=>{
+
+      //     return a+b
+      // })
+      // console.log(newam);
+
+      //-------------------------------------------------------------
+      //   یک آرایه از نام‌ها داشته باشید و با forEach تمام نام‌ها را با حروف بزرگ چاپ کنید.
+
+      // let name=['ali','hasan','mani','ahmad','iman'];
+      // name.forEach((item)=>{
+      //     console.log(item.toUpperCase());
+      // });
+
+      //-------------------------------------------------------------
+
+      // map شبیه به forEach عمل می‌کند اما نتیجه تغییرات را به صورت یک آرایه جدید برمی‌گرداند. map بسیار کاربردی است و زمانی استفاده می‌شود که می‌خواهید تمام عناصر را تغییر دهید.
+
+      // const number=[1,2,3,4];
+      // const tavan=number.map((zarb)=>{
+      //     return zarb**2//tavan resandan
+      // })
+      // console.log(tavan);
+      //--------------------------------------------------------------
+      //   یک آرایه از اعداد داشته باشید و با filter فقط اعدادی که کمتر از 10 هستند را جدا کنید.
+
+      //   const number = [0, 3, , 6, 7, 3, 2];
+      //   const filter = number.filter((kochak) => {
+      //     return kochak > 3;
+      //   });
+      //   console.log(filter);
+
+      //--------------------------------------------------------------
+      //   یک آرایه از رشته‌ها داشته باشید و با find اولین رشته‌ای که طول آن بیشتر از 5 است را پیدا کنید.
+
+      // const namee=['amiral222i','hasani','bodaghi','parsahastam'];
+      // const back=namee.find((finde)=>{
+      //     return finde.length<10;
+
+      // })
+      // console.log(back);
+      //--------------------------------------------------------------
+      //   یک آرایه از اعداد داشته باشید و با reduce حاصل ضرب تمام اعداد را به دست بیاورید.
+
+      // const numbers = [1, 2, 3, 4];
+      // const javab=numbers.reduce((p,l)=>{
+      //     return p*l;
+      // })
+      // console.log(javab);
+
+      //--------------------------------------------------------------
+      let student = [
+        {
+          id: 1,
+          name: "ali",
+          score: 100,
+          favusubject: "math",
+        },
+        {
+          id: 2,
+          name: "hasan",
+          score: 50,
+          favusubject: "history",
+        },
+        {
+          id: 3,
+          name: "reza",
+          score: 80,
+          favusubject: "chemistery",
+        },
+        {
+          id: 4,
+          name: "mohammad",
+          score: 20,
+          favusubject: "art",
+        },
+        {
+          id: 5,
+          name: "amir",
+          score: 90,
+          favusubject: "sience",
+        },
+      ];
+      console.log(student);
+
+      let fiter = student.filter((item) => {
+        return item.score >= 80;
+      });
+      console.log(fiter);
+
+
+      let findi = student.find((idtem) => {
+        return idtem.id == 3;
+      });
+      console.log(findi);
+
+
+
+      let reduci =
+        student.reduce((iteem, nytem) => {
+          // console.log(iteem);
+          return iteem + nytem.score;
+        }, 0) / student.length;
+        console.log(reduci);
+
+const subject='his';
+const total={};
+total[subject]='nemidonam';
+console.log(total);
+
+
+
+
+    </script>
+  </body>
+</html>

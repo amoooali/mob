@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div style="display: flex">
+      <input type="number" id="b1" placeholder="عدد اول" />
+      <input type="number" id="b2" placeholder="عدد دوم" />
+    </div>
+
+    <button style="border: 1px solid red" onclick="jam()">جمع</button>
+    <button style="border: 1px solid red" onclick="tafrigh()">تفریق</button>
+    <button style="border: 1px solid red" onclick="zarb()">ضرب</button>
+    <button style="border: 1px solid red" onclick="menha()">تقسیم</button>
+
+    <p id="f3">نتیجه نمایش داده می‌شود</p>
+
+    <script>
+      // تابع جمع
+      function jam() {
+        let a = Number(document.getElementById("b1").value);
+        let b = Number(document.getElementById("b2").value);
+        document.getElementById("f3").innerText = "نتیجه جمع: " + (a + b);
+      }
+
+      // تابع تفریق
+      function tafrigh() {
+        let a = Number(document.getElementById("b1").value);
+        let b = Number(document.getElementById("b2").value);
+        document.getElementById("f3").innerText = "نتیجه تفریق: " + (a - b);
+      }
+
+      // تابع ضرب
+      function zarb() {
+        let a = Number(document.getElementById("b1").value);
+        let b = Number(document.getElementById("b2").value);
+        document.getElementById("f3").innerText = "نتیجه ضرب: " + a * b;
+      }
+
+      // تابع تقسیم
+      function menha() {
+        let a = Number(document.getElementById("b1").value);
+        let b = Number(document.getElementById("b2").value);
+        if (b !== 0) {
+          document.getElementById("f3").innerText = "نتیجه تقسیم: " + a / b;
+        } else {
+          document.getElementById("f3").innerText = "تقسیم بر صفر مجاز نیست!";
+        }
+      }
+    </script>
+  </body>
+</html>

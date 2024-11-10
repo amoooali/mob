@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="rang" onclick="rang()">click me </button>
+
+
+
+
+    <!-- <script>
+        function rang(){
+
+const random="#"+Math.floor(Math.random() * 16777215).toString(16);
+// const random="#"+Math.floor(Math.random()*16777215).toString(16);
+
+document.body.style.background=random;
+setInterval(rang,1000);
+        }        
+        setInterval(rang,1000);
+    </script> -->
+
+    <button onclick="changeBackgroundColor()">تغییر رنگ پس‌زمینه</button>
+
+
+    <script>
+        let lastClickTime = 0;
+    
+        function changeBackgroundColor() {
+          const currentTime = new Date().getTime(); // زمان فعلی
+    
+          // اگر یک ثانیه یا بیشتر از آخرین کلیک گذشته باشد
+          if (currentTime - lastClickTime >= 1000) {
+            const randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
+            document.body.style.backgroundColor = randomColor;
+            lastClickTime = currentTime; // به‌روزرسانی زمان آخرین کلیک
+          }
+        }
+      </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #clock{
+            font-size: 30px;
+            color: black;
+            border: 1px solid red;
+            width: 50%;
+            text-align: center;
+            position: relative;
+            margin-left: 300px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div id="clock">00:00:00</div>
+    <script>
+
+        function clobby(){
+
+            let dati=new Date();
+            let hours=dati.getHours();
+            let minute=dati.getMinutes();
+            let second=dati.getSeconds();
+            document.getElementById('clock').innerText=`${hours}:${minute}:${second}`;
+        }
+        setInterval(clobby, 1000);
+ clobby();
+
+
+
+
+
+
+
+ 
+    </script>
+
+    
+
+
+
+
+
+</body>
+</html>
