@@ -6,7 +6,18 @@
     <title>Document</title>
   </head>
   <body>
-    <button id="a1" onclick="rang()">click me</button>
+    <button id="a1" class="d1" onclick="rang()">click me</button>
+
+    <h1 id="id"></h1>
+    <h2 class="class"></h2>
+    <h3></h3>
+    <div>gsgse</div>
+    <div class="div">
+      <p class="p">iiii</p>
+    </div>
+    <div>gsgse</div>
+    <div class="ewe">gsgse</div>
+    <img src="./clock.html" alt="">
     <script>
       //----------------------------------------------------------
       //   let number = [1, 2, 3, 4, 5];
@@ -161,6 +172,42 @@
       //     visible = true;
       //   }
       // }
+
+      //----------------------------------------------------------
+
+      //   let visible = true;
+      //   function rang() {
+      //     if (visible == true) {
+      //       console.log(
+      //  new Date('2,12,2007').getFullYear()
+      //       );
+      //       visible = false;
+      //     } else {
+      //       console.clear();
+      //       visible = true;
+      //     }
+      //   }
+
+      //----------------------------------------------------------
+
+      // document.getElementById('id').innerHTML="sallam";
+
+      //       let tags = document.getElementsByTagName('h3');
+      // for (let i = 0; i < tags.length; i++) {
+      // tags[i].innerHTML = 'hi';}
+
+      // let tag=document.getElementsByTagName('div');
+      // for(let i=0;i<=tag.length;i++){
+
+      //   tag[i].innerHTML='jadid';
+      //   console.log(i);
+      // }
+      let elemnt=document.querySelectorAll('.div .p');
+      elemnt.forEach((items)=>{
+
+        items.innerHTML='amirali';
+      })
+
 
       //----------------------------------------------------------
     </script>
