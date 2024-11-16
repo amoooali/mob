@@ -17,7 +17,11 @@
     </div>
     <div>gsgse</div>
     <div class="ewe">gsgse</div>
-    <img src="./clock.html" alt="">
+    <img src="./clock.html" alt="" />
+    <button id="bot" class="bot" style="color: red">
+      click me
+      <p id="p">vf</p>
+    </button>
     <script>
       //----------------------------------------------------------
       //   let number = [1, 2, 3, 4, 5];
@@ -202,14 +206,34 @@
       //   tag[i].innerHTML='jadid';
       //   console.log(i);
       // }
-      let elemnt=document.querySelectorAll('.div .p');
-      elemnt.forEach((items)=>{
 
-        items.innerHTML='amirali';
-      })
 
+      // let elemnt = document.querySelectorAll(".div .p");
+      // elemnt.forEach((items) => {
+      //   items.innerHTML = "amirali";
+      // });
 
       //----------------------------------------------------------
+
+      document.body.style.backgroundColor = "red";
+      let btn = document.getElementById("bot");
+      let show = btn.nodeName;
+      let watch = btn.style;
+      let kids = btn.children;
+      console.log(show);
+      console.log(watch);
+      console.log(kids);
+      console.dir(document);
+
+      //----------------------------------------------------------
+
+      let p = document.getElementById("p");
+      p.style.backgroundColor = "purple";
+      p.style.color = "yellow";
+
+      //----------------------------------------------------------
+      
+
     </script>
   </body>
 </html>
