@@ -1,4 +1,63 @@
-// const n='ali';
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .highlight {
+    background-color: green;
+    color: white;
+}
+.seffr{
+    background-color: red;
+    color: white;
+}
+.ff{
+    background-color: blue;
+    color: white;
+}
+    </style>
+</head>
+<body>
+<!--     
+<center><h1 id="demo">hello</h1></center>
+<button id="al" >click me</button>
+
+
+
+<button onclick="this.innerHTML = Date()">The time is?</button>
+
+
+<button onclick="x()" id="ff">The time is?</button>
+
+
+ -->
+
+<!-- 
+<p id="we">
+    <h1></h1>
+</p> -->
+  
+
+<input type="number" id="numi1">
+
+<input type="number" id="numi2">
+
+<button  onclick="calculatee()">  click me!  </button>
+
+
+<p id="eee"></p>
+
+
+pleas enter number:
+<input type="number" id="n4">
+<button onclick="checkEvenOdd()">click me</button>
+<p  id="nn4"></p>
+
+<script>
+
+    // const n='ali';
 // const d='hasan';
 // let fullali='name:'+''+n+'  '+'familly:'+''+d;
 
@@ -725,7 +784,7 @@
 //   }
 //   return myArray;
 // }
-// </script>
+// 
 
 //------------------------------------------------------------------------------
 // let number1=prompt(`please enter number`);
@@ -740,18 +799,20 @@
 
 // console.log(`my sum is:${sum} and my neg is :${neg} and my zarb is ${zarb}`);
 
-function calculatee() {
-  let num1 = Number(document.getElementById("numi1").value);
-  let num2 = Number(document.getElementById("numi2").value);
+//------------------------------------------------------------------------------
 
-  let sum = num1 + num2;
-  let nav = num1 - num2;
-  let zarb = num1 * num2;
+// function calculatee() {
+//   let num1 = Number(document.getElementById("numi1").value);
+//   let num2 = Number(document.getElementById("numi2").value);
 
-  document.getElementById(
-    "eee"
-  ).innerText = `${sum}-------${nav}---------${zarb}`;
-}
+//   let sum = num1 + num2;
+//   let nav = num1 - num2;
+//   let zarb = num1 * num2;
+
+//   document.getElementById(
+//     "eee"
+//   ).innerText = `${sum}-------${nav}---------${zarb}`;
+// }
 
 // function click(){
 
@@ -767,28 +828,31 @@ function calculatee() {
 // }
 // }
 
-function checkEvenOdd() {
-  let a = Number(document.getElementById("n4").value);
-  let b = document.getElementById("nn4");
-  if (a == 0) {
-    b.innerText = "sefr";
-    b.classList.add("seffr");
-    b.classList.remove("highlight","ff");
+// function checkEvenOdd() {
+//   let a = Number(document.getElementById("n4").value);
+//   let b = document.getElementById("nn4");
+//   if (a == 0) {
+//     b.innerText = "sefr";
+//     b.classList.add("seffr");
+//     b.classList.remove("highlight","ff");
    
 
-    b.classList.remove("highlight");
-  }
-  else if (a % 2 == 0) {
-    b.innerText = "zoje";
-    b.classList.add("highlight");
-    b.classList.remove("seffr","ff");
+//     b.classList.remove("highlight");
+//   }
+//   else if (a % 2 == 0) {
+//     b.innerText = "zoje";
+//     b.classList.add("highlight");
+//     b.classList.remove("seffr","ff");
    
-  } else {
-    b.innerText = "fard";
+//   } else {
+//     b.innerText = "fard";
 
-    b.classList.add("ff");
-    b.classList.remove("highlight");
-    b.classList.remove("seffr");
-  }
-}
+//     b.classList.add("ff");
+//     b.classList.remove("highlight");
+//     b.classList.remove("seffr");
+//   }
+// }
 
+</script>
+</body>
+</html>
