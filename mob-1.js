@@ -1,46 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <button id="a1" class="d1" onclick="rang()">click me</button>
-
-    <h1 id="id"></h1>
-    <h2 class="class">hi</h2>
-    <h3></h3>
-    <div>gsgse</div>
-    <div class="div">
-      <p class="p">iiii</p>
-    </div>
-    <div>gsgse</div>
-    <div class="ewe">gsgse</div>
-    <img src="./clock.html" alt="" />
-    <button id="bot" class="bot" style="color: red">
-      click me
-      <p id="p">vf</p>
-    </button>
-
-    <h2>HELLO</h2>
-    <h2>HELLO</h2>
-    <h2>HELLO</h2>
-
-    <ul id="ud">
-      <li>o</li>
-      <li>o</li>
-      <li>o</li>
-      <li>o</li>
-      <li>orer</li>
-    </ul>
-
-    <h3 class="oo" id="o1">o1</h3>
-    <h3 class="oo" id="o1">o2</h3>
-    <h3 class="oo" id="o3">o3</h3>
-    <h3 class="oo" id="04">o4</h3>
-    <script>
-      //----------------------------------------------------------
+  //----------------------------------------------------------
       //   let number = [1, 2, 3, 4, 5];
 
       //   let javab = number.map((item) => {
@@ -320,12 +278,64 @@
 
       // let ul=document.querySelectorAll('#ul li');
       // console.log(ul);
- 
+
       // let u=document.querySelector('#ud');
       // let li=u.children;
       // console.log(li);
-      
+
       //----------------------------------------------------------
-    </script>
-  </body>
-</html>
+
+      // let h1 = document.querySelector(".result");
+      // console.log(h1.parentElement.parentElement);
+      // let r = h1.parentElement;
+      // r.style.color = "red";
+
+      // let li=document.querySelector("#next");
+      // let e=li.nextSibling.nextSibling.style.color='red';
+      // console.log(e);
+
+      // let li=document.querySelector("#next");
+      // let e=li.nextElementSibling.style.color='red';
+      // console.log(e);
+
+      // let lastli=document.querySelector('#last');
+      // let f=lastli.previousSibling.previousSibling.style.color='green';
+      // console.log(f);
+
+      // let lastli=document.querySelector('#last');
+      // let f=lastli.previousElementSibling.style.color='green';
+      // console.log(f);
+
+      //----------------------------------------------------------
+
+      // let li=document.querySelector('#next');
+      // console.log(li.childNodes[0].nodeValue);
+      // console.log(li.children[2]);
+      // console.log(li.childNodes[8].nodeValue);
+      // console.log(li.childNodes[8].nodeValue);
+      // console.log(li.childNodes[8]);
+
+      //let li=document.querySelector('#next');
+      // let child=li.firstChild;
+      // console.log(child.textContent);
+
+      //       li.childNodes.forEach(node => {
+      //   if (node.nodeType === 3) { // 3: Text Node
+      //     console.log(node.nodeValue.trim());
+      //   }
+      // });
+
+      // let li = document.querySelector("#next");
+      // li.childNodes.forEach((item) => {
+      //   if (item.nodeType === 3) {
+      //     console.log(item.nodeValue.trim());
+      //   }
+      // });
+
+      let li = document.querySelector("#next");
+      li.childNodes.forEach((item) => {
+        if (item.nodeType === 1) {
+          console.log(item.textContent);
+        }
+      });
+      //----------------------------------------------------------
