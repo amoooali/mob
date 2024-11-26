@@ -7,3 +7,18 @@ a{
     background-color: red;
     margin-bottom: 89px;
 }
+.ff{
+    background-color: rgb(46, 33, 33);
+}
+.jj{
+    background-color: blue;
+}
+.kk{
+    background-color: aquamarine;
+}
+.l{
+    background-color: greenyellow;
+    width: 100%;
+    border: 3px solid red;
+    border-radius: 10px;
+}

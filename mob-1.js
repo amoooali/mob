@@ -482,7 +482,6 @@
 // const show =add.getAttribute('href');
 // console.log(show);
 
-
 // let addy=first.nextElementSibling;
 // addy.setAttribute('id','com');
 // addy.setAttribute('href',"./calomkd-html");
@@ -492,17 +491,44 @@
 // getti.setAttribute('class','kkka');
 // console.log(getti.getAttribute('class'));
 
-let sla = document.querySelector('#sla');
 // let second = document.querySelector('#second');
 // let third = document.querySelector('#third');
 // let clname = fi.textContent;
 // console.log(clname);
-const y=sla.getAttribute("id");
-console.log(y);
-console.log(fi.id);
 
+// let sla = document.querySelector('#sla');
+// let y=sla.setAttribute("class","hsl");
+// console.log(sla.getAttribute('id'));
+// console.log(sla.id);
+// console.log(sla.getAttribute('class'));
+
+// let second=document.querySelector('#second');
+// second.className='ali';
+// console.log(second.className);
+// console.log(second.id);
+
+// let third = document.querySelector("#third");
+
+// third.classList.add('bodaghi');
+// let r=third.classList;
+// console.log(third.nodeValue);
+// third.childNodes.forEach((item)=>{
+//     if(item.nodeType===3){
+//         console.log(item.nodeValue.trim());
+//     }
+// })
+
+// let show = third.classList.add("kk", "jj", "ff");
+// third.classList.remove("jj");
+// let tt = third.classList;
+// console.log(tt);
+// let result = third.classList.contains("kk");
+// if (result == true) {
+//   console.log("it is exist");
+// } else {
+//   console.log("it doesnt exist");
+// }
 //-------------------------------------------------------------------------
-
 
 // let first = document.querySelector(".first");
 
@@ -531,3 +557,144 @@ console.log(fi.id);
 // let third = document.querySelector("#third");
 // let clname = fisrt.className;
 // console.log(clname);
+
+//----------------------------------------------------------
+
+// let bodydiv=document.createElement('div');
+// let divtext=document.createTextNode('sallam');
+
+// bodydiv.appendChild(divtext);
+
+// document.body.appendChild(bodydiv);
+// bodydiv.setAttribute('class','jadid');
+//----------------------------------------------------------
+
+// let table=document.createElement('table');
+// let tbody=document.createElement('tbody');
+// let tr=document.createElement('tr');
+// let td=document.createElement('td');
+
+// table.style.border='1px solid red';
+// td.style.border='1px solid  yellow';
+
+// td.textContent='sallam';
+// table.appendChild(tbody);
+// tbody.appendChild(tr);
+// tr.appendChild(td);
+// document.body.appendChild(table);
+
+//----------------------------------------------------------
+
+// let table = document.createElement("table");
+// let tbody = document.createElement("tbody");
+
+// let row = 3;
+// let coulmn = 4;
+
+// for (let i = 0; i < row; i++) {
+//   let tr = document.createElement("tr");
+//   for (let j = 0; j < coulmn; j++) {
+//     let td = document.createElement("td");
+//     td.textContent = `row${i},col${j}`;
+//     td.style.border = "1px solid red";
+//     tr.appendChild(td);
+//   }
+//   tbody.appendChild(tr);
+// }
+
+// table.appendChild(tbody);
+// table.style.border = "2px solied blue";
+// table.style.padding = "20px";
+
+// document.body.appendChild(table);
+//----------------------------------------------------------
+// let info = [
+//   { id: 1, name: "ali", lastname: "bodaghi", age: 18, degree: "none" },
+//   { id: 1, name: "hasan", lastname: "bodaghi", age: 18, degree: "none" },
+//   { id: 1, name: "jorj", lastname: "bodaghi", age: 18, degree: "none" },
+//   { id: 1, name: "shantiaa", lastname: "bodaghi", age: 18, degree: "none" },
+//   { id: 1, name: "taham", lastname: "bodaghi", age: 18, degree: "none" },
+// ];
+
+// info.forEach((item)=>{
+
+// let table = document.createElement("table");
+// let tbody = document.createElement("tbody");
+
+// let row = 3;
+// let coulmn = 4;
+
+// for (let i = 0; i < row; i++) {
+//   let tr = document.createElement("tr");
+//   for (let j = 0; j < coulmn; j++) {
+//     let td = document.createElement("td");
+//     td.textContent = `row${i},col${j}`;
+//     td.style.border = "1px solid red";
+//     tr.appendChild(td);
+//   }
+//   tbody.appendChild(tr);
+// }
+// table.appendChild(tbody);
+// table.style.border = "2px solied blue";
+// table.style.padding = "20px";
+
+// document.body.appendChild(table);
+
+// })
+//----------------------------------------------------------
+
+let info = [
+  { id: 1, name: "ali", lastname: "bodaghi", age: 18, degree: "none" },
+  { id: 2, name: "hasan", lastname: "bodaghi", age: 18, degree: "none" },
+  { id: 3, name: "jorj", lastname: "bodaghi", age: 18, degree: "none" },
+  { id: 5, name: "shantiaa", lastname: "bodaghi", age: 18, degree: "none" },
+  { id: 6, name: "taham", lastname: "bodaghi", age: 18, degree: "none" },
+  { id: 7, name: "reza", lastname: "bodaghi", age: 18, degree: "none" },
+];
+
+let table = document.createElement("table");
+let tbody = document.createElement("tbody");
+
+let header = ["id", "name", "lastname", "age", "degree"];
+
+let tr = document.createElement("tr");
+header.forEach((items) => {
+  let th = document.createElement("th");
+  th.textContent = items;
+  th.style.border = "1px solid red";
+  th.style.padding = "20px";
+  tr.appendChild(th);
+});
+tbody.appendChild(tr);
+
+info.forEach((elemnt) => {
+  let trr = document.createElement("tr");
+  for (let key in elemnt) {
+    let tdd = document.createElement("td");
+    tdd.textContent = elemnt[key];
+
+    tdd.style.border = "1px solid red";
+    tdd.style.padding = "20px";
+
+    trr.appendChild(tdd);
+  }
+  tbody.appendChild(trr);
+});
+
+table.appendChild(tbody);
+
+table.style.border = "1px solid red";
+table.style.padding = "20px";
+
+document.body.appendChild(table);
+
+let a = true;
+function cli() {
+  if (a == true) {
+    table.classList.add("class", "l");
+    a = false;
+  } else {
+    table.classList.remove("claa", "l");
+    a = true;
+  }
+}
