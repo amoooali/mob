@@ -342,12 +342,10 @@
 //   });
 //----------------------------------------------------------
 
+// let li = document.querySelector("#tool");
 
-
-let li=document.querySelector('#tool');
 // console.log(li.childNodes);
 // console.log(li.children);
-
 
 // li.childNodes.forEach((item)=>{
 //     if(item.nodeType===1){
@@ -355,7 +353,6 @@ let li=document.querySelector('#tool');
 
 //     }
 // })
-
 
 // li.childNodes.forEach((item)=>{
 //     if(item.nodeType===3){
@@ -369,21 +366,17 @@ let li=document.querySelector('#tool');
 // let show=li.children[2];
 // console.log(show.textContent);
 
-
-
 // if(li.childNodes[5]){
 //     let show=li.childNodes[5];
 //     console.log(show.textContent);
 //     console.log(show.nodeType)
-    
+
 // }
 
 // console.log(li.childNodes);
 // li.childNodes.forEach((node)=>{
 //     console.log(`node type:${node.nodeType}\t\t\t\t\t\t\t\tnode value:${node.textContent}\t\t\t\t\t\t\t\t `)
 // })
-
-
 
 // let c=li.children[2];
 // let g=true;
@@ -397,46 +390,42 @@ let li=document.querySelector('#tool');
 //     }
 // }
 
+// let button=li.children[2];
+// let f=true;
 
-let button=li.children[2];
-let f=true;
+// function changecolor(){
+//     if(f===true){
+//         button.style.backgroundColor='red';f=false
+//     }
+//     else{
+//         button.style.backgroundColor='';
+//         f=true;
+//     }
+// }
 
-function changecolor(){
-    if(f===true){
-        button.style.backgroundColor='red';f=false
-    }
-    else{
-        button.style.backgroundColor='';
-        f=true;
-    }
-}
+// console.log(button.textContent);
+// console.log(button.nodeType);
 
-console.log(button.textContent);
-console.log(button.nodeType);
-
-li.childNodes.forEach((nodeT)=>{
-    if(nodeT.nodeType===1){
-        console.log(`node name:${nodeT.textContent} and  node tagname :${nodeT.tagName} and node type:${nodeT.nodeType}`)
-    }
-})
+// li.childNodes.forEach((nodeT)=>{
+//     if(nodeT.nodeType===1){
+//         console.log(`node name:${nodeT.textContent} and  node tagname :${nodeT.tagName} and node type:${nodeT.nodeType}`)
+//     }
+// })
 
 // let element=document.querySelector('#a');
-// function ali() {  
+// function ali() {
 // element.innerHTML=`date: ${Date()}`;
 // }
 // setInterval(ali,1000);
 
+// let clock=document.querySelector('#a');
+// function ali(){
+//     let zaman=new Date();
+//     clock.innerHTML=`${zaman.getHours()}:${zaman.getMinutes()}:${zaman.getSeconds()}`;
+// }
+// setInterval(ali,1000);
 
-
-let clock=document.querySelector('#a');
-function ali(){
-    let zaman=new Date();
-    clock.innerHTML=`${zaman.getHours()}:${zaman.getMinutes()}:${zaman.getSeconds()}`;
-}
-setInterval(ali,1000);
-
-ali();
-
+// ali();
 
 // let popm=document.querySelectorAll('h1');
 // document.querySelector('#g').innerHTML=popm[1].textContent /*or innerhtml*/
@@ -447,6 +436,98 @@ ali();
 //     return item.style.color="red";
 // })
 
+// let lli=document.querySelectorAll('li');
+// document.querySelector('#inner').innerHTML=lli[0].textContent;
+// console.log(lli.length);
 
-let lli=document.querySelectorAll('li');
-document.querySelector('#inner').innerHTML=lli[0].textContent;
+// lli.forEach((llii)=>{
+//     // console.log(llii.textContent);
+//      llii.style.backgroundColor='red';
+// })
+
+//-------------------------------------------------------------------------
+
+// let first=document.querySelector('.first');
+
+// let second=first.previousElementSibling;
+// let second=first.nextElementSibling.style.color='red';
+// console.log(second.textContent);
+
+// let ul=document.querySelector('.hi');
+// console.log(ul.childNodes.nodevalue);
+// Array.from(ul.children).forEach
+// ul.childNodes.forEach((item)=>{
+
+//     if(item.nodeType===1){
+// console.log(item.nodeValue.trim());
+// console.log(item.textContent.trim());
+//     }
+
+// let easy=first.lastChild.textContent;
+// console.log(easy);
+
+//-------------------------------------------------------------------------
+
+// let first = document.querySelector(".first");
+
+// const classs = first.getAttribute('class');
+// const iddd=first.getAttribute('id');
+// console.log(classs);
+// console.log(iddd);
+
+// let linkk=document.querySelectorAll('class');
+// console.log(linkk);
+
+// const add=document.querySelector('a');
+// const show =add.getAttribute('href');
+// console.log(show);
+
+
+// let addy=first.nextElementSibling;
+// addy.setAttribute('id','com');
+// addy.setAttribute('href',"./calomkd-html");
+// addy.textContent='daaaaaaaaaaaaaaa';
+// console.log(addy);
+// let getti = document.querySelector('a');
+// getti.setAttribute('class','kkka');
+// console.log(getti.getAttribute('class'));
+
+let sla = document.querySelector('#sla');
+// let second = document.querySelector('#second');
+// let third = document.querySelector('#third');
+// let clname = fi.textContent;
+// console.log(clname);
+const y=sla.getAttribute("id");
+console.log(y);
+console.log(fi.id);
+
+//-------------------------------------------------------------------------
+
+
+// let first = document.querySelector(".first");
+
+// const classs = first.getAttribute("class");
+// const iddd = first.getAttribute("id");
+// console.log(iddd);
+// console.log(classs);
+
+// const link = document.querySelectorAll(".first");
+// console.log(link);
+
+// const ll=document.querySelector('a');
+// const show =ll.getAttribute('href');
+// console.log(show);
+
+// let add = first.nextElementSibling;
+// add.setAttribute("id", "amir");
+// add.setAttribute("href", "./calc-po.html");
+// add.textContent = "sallam";
+// console.log(add);
+
+// console.log(add.getAttribute("id"));
+
+// let fisrt = document.querySelector("#first");
+// let second = document.querySelector("#second");
+// let third = document.querySelector("#third");
+// let clname = fisrt.className;
+// console.log(clname);
