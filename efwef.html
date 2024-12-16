@@ -1,0 +1,19 @@
+<input type="text" id="myInput" placeholder="Enter something">
+<button id="getValueBtn">Get Value</button>
+<p id="output"></p>
+
+<script>
+  // انتخاب عناصر
+  const inputField = document.getElementById('myInput');
+  const button = document.getElementById('getValueBtn');
+  const output = document.getElementById('output');
+
+  // اضافه کردن رویداد کلیک به دکمه
+  button.addEventListener('click', () => {
+    // دریافت مقدار ورودی
+    const inputValue = inputField.value;
+
+    // نمایش مقدار در صفحه
+    output.textContent = `You entered: ${inputValue}`;
+  });
+</script>

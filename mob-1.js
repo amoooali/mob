@@ -1,3 +1,24 @@
+// document.addEventListener('DOMContentLoaded',()=>{
+
+//   let iooou = document.querySelector('.tagir');
+//   let haminn=iooou?iooou.nextElementSibling:null;
+// let po=true;
+//   if(haminn){
+
+//   haminn.addEventListener('click',()=>{
+
+//   haminn.classList.toggle('o');
+
+//   });
+
+//   }
+
+//   else{document.write('khattta');
+//     ;
+//   };
+
+//   });
+
 //----------------------------------------------------------
 //   let number = [1, 2, 3, 4, 5];
 
@@ -650,51 +671,552 @@ let info = [
   { id: 5, name: "shantiaa", lastname: "bodaghi", age: 18, degree: "none" },
   { id: 6, name: "taham", lastname: "bodaghi", age: 18, degree: "none" },
   { id: 7, name: "reza", lastname: "bodaghi", age: 18, degree: "none" },
+  {
+    id: 5,
+    name: "shfrgfrgrtiaa",
+    lastname: "bodaghi",
+    age: 18,
+    degree: "none",
+  },
+  { id: 6, name: "taham", lastname: "bodaghi", age: 18, degree: "none" },
+  { id: 7, name: "reza", lastname: "bodaghi", age: 18, degree: "none" },
 ];
+//------------------------------------------------------------
+// let table=document.createElement('table');
+// let tbody=document.createElement('tbody');
 
-let table = document.createElement("table");
-let tbody = document.createElement("tbody");
+// let header=['id','name','lastname','age','degree'];
+// let tr=document.createElement('tr');
 
-let header = ["id", "name", "lastname", "age", "degree"];
+// header.forEach((item)=>{
+// let th=document.createElement('th');
+// th.textContent=item;
+// tr.appendChild(th);
+// })
+// tbody.appendChild(tr);
 
-let tr = document.createElement("tr");
-header.forEach((items) => {
-  let th = document.createElement("th");
-  th.textContent = items;
-  th.style.border = "1px solid red";
-  th.style.padding = "20px";
-  tr.appendChild(th);
+// info.forEach((elemnt)=>{
+
+//   let tr=document.createElement('tr');
+//   for(let key in elemnt){
+//   let td=document.createElement('td');
+
+//   td.textContent=elemnt[key];
+//   tr.appendChild(td);
+//   }
+//   tbody.appendChild(tr);
+// })
+// table.appendChild(tbody);
+// document.body.appendChild(table);
+
+// table.classList.add('class','l');
+//------------------------------------------------------------
+
+// let table = document.createElement("table");
+// let tbody = document.createElement("tbody");
+
+// let header = ["id", "name", "lastname", "age", "degree"];
+
+// let tr = document.createElement("tr");
+// header.forEach((item) => {
+//   let th = document.createElement("th");
+//   th.textContent = item;
+//   tr.appendChild(th);
+// });
+// tbody.appendChild(tr);
+
+// info.forEach((elemnt) => {
+//   let trr = document.createElement("tr");
+
+//   for (let key in elemnt) {
+//     let tdd = document.createElement("td");
+//     tdd.textContent = elemnt[key];
+//     trr.appendChild(tdd);
+//   }
+//   tbody.appendChild(trr);
+// });
+
+// table.appendChild(tbody);
+// document.body.appendChild(table);
+
+// table.classList.add("class", "l");
+// // td.classList.add("class","l");
+// let allcell = document.querySelectorAll("tdd");
+// let a = true;
+// function cli() {
+//   // let allcell = document.querySelectorAll("tdd");
+//   if (a === true) {
+//     allcell.forEach((cell) => {
+//       cell.classList.add("class", "kkk");
+//     });
+//     a = false;
+//   } else {
+//     allcell.forEach((uu) => {
+//       uu.classList.remove("class", "kkk");
+//     });
+//     a = true;
+//   }
+// }
+
+// function cli() {
+//   // انتخاب تمام سلول‌های جدول
+//   const allCells = document.querySelectorAll("td");
+
+//   if (a === true) {
+//     allCells.forEach((cell) => {
+//       cell.classList.add("kkk"); // اضافه کردن کلاس
+//     });
+//     a = false;
+//   } else {
+//     allCells.forEach((cell) => {
+//       cell.classList.remove("kkk"); // حذف کلاس
+//     });
+//     a = true;
+//   }
+// }
+
+//----------------------------------------------------------
+
+// let table = document.createElement("table");
+// let tbody = document.createElement("tbody");
+
+// let header = ["id", "name", "lastname", "age", "degree"];
+
+// let tr = document.createElement("tr");
+// header.forEach((items) => {
+//   let th = document.createElement("th");
+//   th.textContent = items;
+//   th.style.border = "1px solid red";
+//   th.style.padding = "20px";
+//   tr.appendChild(th);
+// });
+// tbody.appendChild(tr);
+
+// info.forEach((elemnt) => {
+//   let trr = document.createElement("tr");
+//   for (let key in elemnt) {
+//     let tdd = document.createElement("td");
+//     tdd.textContent = elemnt[key];
+
+//     tdd.style.border = "1px solid red";
+//     tdd.style.padding = "20px";
+
+//     trr.appendChild(tdd);
+//   }
+//   tbody.appendChild(trr);
+// });
+
+// table.appendChild(tbody);
+
+// table.style.border = "1px solid red";
+// table.style.padding = "20px";
+
+// document.body.appendChild(table);
+
+// let a = true;
+// function cli() {
+//   if (a == true) {
+//     table.classList.add("class", "l");
+//     a = false;
+//   } else {
+//     table.classList.remove("claa", "l");
+//     a = true;
+//   }
+// }
+//-------------------------------------------------------------
+// let bot=document.querySelector('button');
+// bot.classList.add('boot');
+// let hh=document.querySelector('h1');
+// document.body.insertBefore(bot,hh);//avali mige chi ezafe beshe va dovomi mige ghabl chi ezafe beshe
+
+// let parent=document.querySelector('.parent');
+// let p=document.createElement('p');
+// p.textContent='Hello world';
+// let h2=document.querySelector('.po');
+// // parent.insertBefore(p,null);
+// document.body.insertBefore(p,hh);
+
+// let div=document.createElement('div');
+// let text=document.createTextNode('welcom to my youtube channel');
+// // div.appendChild(text);
+// document.body.appendChild(text);
+// let show = document.body.replaceChild(div,bot);
+// console.log(show);
+
+// let neew=document.createElement('img');
+// // neew.classList.add('src','./4168987.jpg')
+// neew.src='./4168987.jpg';
+// document.body.replaceChild(neew,p);
+// let gg=document.createElement('h1');
+// gg.innerHTML='salllam';
+// // document.body.appendChild(gg);
+// document.body.append(gg);
+// gg.push
+// document.body.insertBefore(gg,neew);
+
+// let obj={
+//   name:'ali',lastname:'bodaghi'
+// };
+
+// let r={
+//   ...obj,
+//   s:'ffj',
+//   sf:"kfie",
+//   name:obj.name
+// }
+// obj.shahr='tehran';
+// console.log(obj);
+// delete obj.name;
+// console.log(obj);
+// console.log(r);
+
+// const ff=Object.values(r);
+// console.log(ff);
+// let rdc=document.querySelector('#sag');
+// rdc.innerHTML='uddddddddddddddddddddddhwidu';
+// // document.body.prepend(rdc);
+
+// rdc.remove();
+
+// let h11=document.querySelector('h1');
+// console.log(h11);
+// let parentt=document.querySelector('#result');
+// console.log(parentt);
+// let dakhel=parentt.querySelector('h1');
+// console.log(dakhel);
+// let space = parentt.removeChild(dakhel);
+// // console.log(space);
+// let h11=document.querySelector('h1');
+// console.log(h11);
+// let parentt=document.querySelector('#result');
+// console.log('parentt');
+// let dahkhel=parentt.querySelector('h1');
+// console.log(dahkhel);
+// // let space=parentt.removeChild('dahkhel');
+// let acs=document.querySelector('img');
+// let hdh=acs.getAttribute('src');
+// console.log(hdh);
+// let trt=acs.setAttribute('src','./4168987.jpg');
+
+// let a=document.querySelector('h1');
+// let b=document.querySelector('#result');
+// let r=document.querySelector('.bot');
+
+// document.body.insertBefore(b,a);
+// let make=document.createElement("div");
+// make.innerHTML="<a>saalllam</a>";
+
+// document.body.replaceChild(make,r);
+
+// let newee =document.createElement('h1');
+// newee.innerHTML='porrrrrrrrrrrro';
+// newee.style.backgroundColor='red';
+// document.body.prepend(newee);
+
+// let f=document.createAttribute('class');
+// f.value='black';
+// newee.setAttributeNode(f);
+// document.body.prepend(newee);
+
+// newee.classList.add('efefef');
+// // newee.classList.remove("efefef");
+// let uy=newee.classList.contains('efefe.f');
+// console.log(uy);
+
+// let d=document.createElement('div');
+// d.textContent='shfhowfhowifofghwhe';
+// d.classList.add('kkk');
+// document.body.prepend(d);
+
+// document.addEventListener("DOMContentLoaded", () => {
+
+// let target=document.querySelector('.target');
+// let tagir=document.querySelector('.tagir');
+
+// target.addEventListener('mouseover',()=>{
+
+//   tagir.style.color='green';
+// });
+
+// target.addEventListener('mouseout',()=>{
+//   tagir.style.color='yellow';
+// });
+// });
+
+// document.addEventListener("DOMContentLoaded", () => {
+//   let target = document.querySelector(".target");
+//   let tagir = document.querySelector(".tagir");
+
+//   target.addEventListener("mouseover", () => {
+//     tagir.style.color = "green";
+//   });
+
+//   target.addEventListener("mouseout", () => {
+//     tagir.style.color = "yellow";
+//   });
+// });
+
+// document.addEventListener("DOMContentLoaded", () => {
+//   let target = document.querySelector(".target");
+//   let tagir = document.querySelector(".tagir");
+
+//   target.addEventListener("click", () => {
+//     // tagir.style.color = "red";
+//     tagir.classList.add('kkk');
+//   });
+// });
+
+// let ioou=document.querySelector('.tagir');
+// let hamin=ioou.nextElementSibling;
+
+// document.addEventListener('DOMContentLoaded',()=>{
+// if(hamin){
+
+// hamin.addEventListener('click',()=>{
+
+// hamin.classList.add('o');
+
+// });
+// }
+// else{document.write('khattta')};
+
+// });
+//---------------------------------------------------------
+// document.addEventListener("DOMContentLoaded", () => {
+//   let iooou = document.querySelector(".tagir");
+//   let haminn = iooou ? iooou.nextElementSibling : null;
+//   let po = true;
+//   if (haminn) {
+//     haminn.addEventListener("click", () => {
+//       haminn.classList.toggle("o");
+//     });
+//   } else {
+//     document.write("khattta");
+//   }
+// });
+
+// function changing() {
+//   console.log("dkfjefjewpof");
+// }
+
+// document.addEventListener("DOMContentLoaded", () => {
+//   let rr = document.querySelector(".target");
+//   rr.addEventListener("click", changing);
+// });
+
+// function has() {
+//   let ui = document.querySelector(".bot");
+//   let b = ui.classList.contains("target");
+
+//   if (b) {
+//     ui.classList.remove("target");
+//   } else {
+//     ui.classList.add("target");
+//   }
+// }
+
+//---------------------------------------------------------
+
+// document.addEventListener("DOMContentLoaded", () => {
+//   let addp = document.querySelector(".bot");
+//   if (addp) {
+//     addp.addEventListener("click", has);
+//   } else {
+//     console.error("کلاس .bot پیدا نشد");
+//   }
+// });
+
+//----------------------------------------
+
+// let buttan=document.querySelector('.bot');
+
+// buttan.addEventListener('click',()=>{
+// console.log('click');
+// })
+// buttan.addEventListener('mouseenter',()=>{
+
+//   buttan.classList.remove('o');
+// });
+// buttan.addEventListener('mouseup',()=>{
+
+//   console.log('mouseup');
+// });
+// buttan.addEventListener('mousedown',()=>{
+
+//   console.log('mousdown');
+// });
+// buttan.addEventListener('mouseout',()=>{
+
+//   buttan.classList.add('o');
+
+// });
+
+// let buttan = document.querySelector(".bot");
+
+// buttan.addEventListener("keypress",()=>{
+
+//   console.log(buttan.childNodes);
+// });
+
+// buttan.addEventListener("keyup",()=>{
+
+//   console.log(buttan.value);
+// })
+
+// buttan.addEventListener("keydown",()=>{
+
+//   console.log(buttan.innerHTML);
+// })
+
+// let result = document.querySelector("#result");
+
+// buttan.addEventListener("click", (e) => {
+//   console.log(e.currentTarget);
+// });
+// result.addEventListener("click", (e) => {
+//   e.currentTarget.classList.toggle("o");
+//   console.log(e.type);
+// });
+
+// document.addEventListener('DOMContentLoaded',()=>{
+//   let linkk=document.querySelector('#link');
+// linkk.addEventListener('click',(e)=>{
+// e.preventDefault();
+//   console.log(e.currentTarget);
+//   console.log(e.type);
+//   console.log(this);
+// ;});
+// });
+//----------------------------------------------
+// document.addEventListener('DOMContentLoaded',() => {
+//   let btn = document.querySelectorAll(".btn");
+
+//   btn.forEach((item) => {
+//     item.addEventListener("click", (e) => {
+//       console.log(e.currentTarget);
+//       console.log(e.target)
+//       // e.currentTarget.style.color = "red";
+//       e.target.style.color='blue'
+//     });
+//   });
+// });
+// //-----------------------------------------------------------------
+
+// document.addEventListener("DOMContentLoaded", () => {
+//   let linnk = document.querySelector("#link");
+//   linnk.addEventListener("click", ali,);
+//   function ali(event) {
+//     event.preventDefault();// جلوگیری از هدایت لینک
+//     window.scrollTo({ top: 90, behavior: "smooth" });
+
+//   }
+//   window.addEventListener('scroll',()=>{
+
+//     if (linnk.ckiz){
+//       setTimeout(()=>{
+//       document.body.style.backgroundColor='red';},2000)
+//     }
+
+//   })
+// });
+
+//------------------------------------------------------------------
+
+// document.addEventListener("DOMContentLoaded", () => {
+//   let linnk = document.querySelector("#link");
+
+//   linnk.addEventListener("click", (event) => {
+//     event.preventDefault(); // جلوگیری از هدایت لینک
+
+//     // اسکرول به پایین
+//     window.scrollTo({ top: 90, behavior: "smooth" });
+
+//     // نظارت بر پایان اسکرول
+//     const handleScroll = () => {
+//       if (Math.abs(window.scrollY - 90) <= 1) {
+//         // اگر اسکرول به نقطه 90 رسیده باشد
+//         document.body.style.backgroundColor = "red"; // تغییر رنگ
+//         window.removeEventListener("scroll", handleScroll); // حذف شنونده
+//       }
+//     };
+
+//     window.addEventListener("scroll", handleScroll); // بررسی اسکرول
+//   });
+// });
+
+//-----------------------------------------------------------------
+
+// function all(){
+// document.addEventListener('DOMContentLoaded',()=>{
+// function ali(e){
+// e.preventDefault();
+
+// }
+
+// let link=document.querySelector('#link')
+// link.addEventListener('click',ali())
+
+// });
+// };
+
+// setInterval(all,1000);
+
+//-----------------------------------------------------------------
+
+// let a=true;
+// document.addEventListener('scroll',()=>{
+
+// if(a===true){  if(window.s>=2000){
+//   alert('scrool');
+// }
+// a=false;
+// }
+
+// });
+
+//-----------------------------------------------------------------
+
+// document.addEventListener("DOMContentLoaded", () => {
+//   let alii = document.querySelector(".heading");
+//   // alii.addEventListener("click", () => {
+//   //   alii.classList.toggle("ha");
+//   // });
+
+//   function changecolor(event) {
+//     if ( event.type=='keydown') {
+//       alii.style.color = "red";
+//       console.log(event.target);
+//     } else {
+//       alii.style.color = "black";
+//     }
+//   }
+//   document.addEventListener("keydown", changecolor);
+//   document.addEventListener('keyup',()=>{
+//     alii.style.color='black';
+//   })
+
+//   alii.addEventListener('click',(e)=>{
+
+//     // console.log(e.currentTarget);
+//     console.log(e.currentTarget);
+//     console.log(e.type);
+//     e.currentTarget.style.color="blue";
+//   })
+//   let lik=document.querySelector('.aa');
+//   lik.addEventListener('click',(u)=>{
+//     u.preventDefault();
+//   })
+// });ّ
+//-----------------------------------------------------------------
+document.addEventListener("DOMContentLoaded", () => {
+  let btns = document.querySelectorAll(".btn");
+
+  btns.forEach((btn) => {
+    btn.addEventListener("click", (event) => {
+      // event.target.style.color = "green";
+      event.currentTarget.style.color = "green";
+      console.log(event.target);
+      console.log(event.currentTarget);
+    });
+  });
 });
-tbody.appendChild(tr);
-
-info.forEach((elemnt) => {
-  let trr = document.createElement("tr");
-  for (let key in elemnt) {
-    let tdd = document.createElement("td");
-    tdd.textContent = elemnt[key];
-
-    tdd.style.border = "1px solid red";
-    tdd.style.padding = "20px";
-
-    trr.appendChild(tdd);
-  }
-  tbody.appendChild(trr);
-});
-
-table.appendChild(tbody);
-
-table.style.border = "1px solid red";
-table.style.padding = "20px";
-
-document.body.appendChild(table);
-
-let a = true;
-function cli() {
-  if (a == true) {
-    table.classList.add("class", "l");
-    a = false;
-  } else {
-    table.classList.remove("claa", "l");
-    a = true;
-  }
-}

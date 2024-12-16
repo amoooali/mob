@@ -1,8 +1,8 @@
-a{
+/* a{
 
     text-decoration: none;
     background-color: red;
-}
+} */
 .color{
     background-color: red;
     margin-bottom: 89px;
@@ -21,4 +21,45 @@ a{
     width: 100%;
     border: 3px solid red;
     border-radius: 10px;
+}
+.kkk{
+    background-color: blue;
+    /* filter: blur(1px); */
+    color: aqua;
+    border: 2px solid red;
+    text-shadow: 3px 6px 7px ;
+    align-items: center;
+    align-content: center;
+    text-transform: capitalize;
+}
+.llm{
+    background-color: blue;
+}
+.n:hover + .llm{
+
+width: 100%;
+background-color:greenyellow;
+}
+.o{
+    text-transform: capitalize;
+    text-wrap: 82px;
+    background-color: blueviolet;
+}
+.target{
+    background-color: green;
+    color: pink;
+}
+body{
+    height: 5500px;
+}
+.ha{
+    color: palevioletred;
+    background-color: aqua;
+    filter: blur(2px);
+    filter: invert(12px);
+    filter: brightness(20px);
+    border-radius:20px;
+    border: 3px solid red;
+  display: flex;
+  justify-content: center;
 }
