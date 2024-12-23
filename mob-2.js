@@ -60,7 +60,7 @@ number.forEach((num) => {
 //     console.log(kk.target);
 // })
 //------------------------------------------------------
-document.addEventListener("DOMContentLoaded", () => {
+/* document.addEventListener("DOMContentLoaded", () => {
   let ja1 = document.createElement("input");
   document.body.appendChild(ja1);
 
@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // console.log(inpu.target);
   });
 });
-
+ */
 //------------------------------------------------------
 
 // document.addEventListener("DOMContentLoaded", () => {
@@ -106,30 +106,32 @@ document.addEventListener("DOMContentLoaded", () => {
 
 //------------------------------------------------------
 
-document.addEventListener("DOMContentLoaded", () => {
+/* document.addEventListener("DOMContentLoaded", () => {
   let a = document.querySelector(".container");
-  let b = document.querySelector(".listname");
+  let b = document.querySelector(".listname"); */
 
-  // b.addEventListener("click", function prop(e) {
-  //   // e.stopPropagation();
-  //   console.log(e.target);
-  //   console.log(e.currentTarget);
-  // });
-  // a.addEventListener(
-  //   "click",
-  //   function prop(e) {
-  //     e.stopPropagation();
-  //     console.log(e.currentTarget);
-  //     console.log(e.target);
-  //   },
-  //   true
-  // );
-  b.addEventListener("click", (item) => {
+// b.addEventListener("click", function prop(e) {
+//   // e.stopPropagation();
+//   console.log(e.target);
+//   console.log(e.currentTarget);
+// });
+// a.addEventListener(
+//   "click",
+//   function prop(e) {
+//     e.stopPropagation();
+//     console.log(e.currentTarget);
+//     console.log(e.target);
+//   },
+//   true
+// );
+/*  b.addEventListener("click", (item) => {
     if (item.target.tagName === "A") {
       console.log(item.target.textContent);
     }
   });
-});
+}); */
+
+//---------------------------------------------------------------
 
 /* let con = document.querySelector(".con");
 let tx = document.querySelector(".tx");
@@ -149,7 +151,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
  */
-
+/* 
 document.addEventListener("DOMContentLoaded", () => {
   let cont = document.querySelector(".con");
   let text = document.querySelector(".tx");
@@ -179,8 +181,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   david.addEventListener("click", fff, { capture: true });
 });
-
-document.addEventListener("DOMContentLoaded", () => {
+ */
+/* document.addEventListener("DOMContentLoaded", () => {
   let form = document.querySelector("#form");
   let tex = document.querySelector(".tex");
   let pas = document.querySelector(".pas");
@@ -190,19 +192,19 @@ document.addEventListener("DOMContentLoaded", () => {
     console.log(tex.value);
     console.log(pas.value);
   });
-});
+}); */
 
-localStorage.setItem("name", "ali");
+/* localStorage.setItem("name", "ali");
 /* sessionStorage.setItem('friend','bodagh');
- */ localStorage.setItem("friend", "bodagh");
+ */ /* localStorage.setItem("friend", "bodagh");
 
 const showw = localStorage.getItem("friend");
 console.log(showw);
-
+ */
 /* localStorage.removeItem('name'); */
 /* localStorage.clear();
  */
-let fruit = ["apple", "bennana", "carot"];
+/* let fruit = ["apple", "bennana", "carot"];
 
 localStorage.setItem("fruit", JSON.stringify(fruit));
 const x = JSON.parse(localStorage.getItem("fruit"));
@@ -222,10 +224,10 @@ dost.push('kkk');
 
 dost.push('ggfh');
 dost.push('eifjef');
-console.log(dost);
+console.log(dost); */
 
 //------------------------------------------------------
-
+/* 
 let poch;
 if(localStorage.getItem('poch',JSON.stringify(poch))){
 
@@ -237,6 +239,7 @@ else{
 poch.push('efjewif');
 poch.push('ssarmy');
 console.log(poch);
+ */
 
 //------------------------------------------------------
 
@@ -258,5 +261,131 @@ console.log(b[2]); */
 
 //------------------------------------------------------
 
+/* let b=setTimeout(()=>{
+  alert("show this message after 2 second");
+},2000);
+clearTimeout(b);
+
+let a=setInterval(()=>{
+  alert('sallam');
+},4000);
+clearInterval(a); */
+
+setTimeout(() => {
+  console.log("این پیام فقط یک بار اجرا شد!");
+}, 3000);
+
+// اجرای پیام به صورت تکراری
+let id = setInterval(() => {
+  console.log("این پیام هر 2 ثانیه اجرا می‌شود!");
+}, 2000);
+
+// توقف اجرای تکراری بعد از 10 ثانیه
+setTimeout(() => {
+  clearInterval(id);
+  console.log("پیام تکراری متوقف شد!");
+}, 6000);
+
+localStorage.setItem("username", "ali");
+console.log("user saved");
+localStorage.removeItem("username");
+console.log("delet shod");
+localStorage.clear();
+console.log("all data delet shode");
+let user = {
+  name: "ali",
+  lastname: "bodaghi",
+  age: "18",
+  city: "tehran",
+};
+localStorage.setItem("userinfo", JSON.stringify(user));
+let geti = localStorage.getItem("userinfo");
+let tabdil = JSON.parse(geti);
+console.log("user info save shode");
+console.log(tabdil.age);
+
+function timeau(name, age) {
+  console.log(`my name is ${name} and i am ${age} years old`);
+}
+setTimeout(timeau, 2000, "bodagh", 18);
+
+//------------------------------------------------------------
+
+function zarb(jj) {
+  return function (hh) {
+    return jj * hh;
+  };
+}
+let a = zarb(2);
+let b = a(3);
+console.log(b);
+
+//------------------------------------------------------------
+
+/* function hi(item){
 
 
+  console.log(`hi my name is ${item}`);
+}
+
+let fi=setInterval(hi,1000,'ali');
+let ji=setInterval(hi,1000,'hasan');
+clearInterval(fi); */
+
+/* let butt = document.querySelector(".btt");
+let boxi = document.querySelector(".box");
+butt.addEventListener("click", () => {
+  const value = boxi.getBoundingClientRect();
+  console.log(value);
+  console.log(value.innerWidth);
+  console.log(value.innerHeight);
+});
+window.addEventListener('resize',()=>{
+
+  console.log(window.innerWidth);
+});
+ */
+document.addEventListener("DOMContentLoaded", () => {
+  let btt = document.querySelector(".btt");
+  let boxi = document.querySelector(".box");
+  btt.addEventListener("click", () => {
+    let bar = boxi.getBoundingClientRect();
+    console.log(bar);
+    console.log(boxi.offsetWidth);
+    console.log(boxi.clientWidth);
+  });
+});
+window.addEventListener("load", () => {
+  console.log("صفحه کاملاً بارگذاری شد!");
+});
+const inputField = document.createElement("input");
+document.body.appendChild(inputField);
+
+inputField.addEventListener("input", (event) => {
+  console.log("مقدار ورودی: ", event.target.value);
+});
+/* const input = document.createElement("input");
+document.body.appendChild(input);
+
+input.addEventListener("focus", () => {
+  console.log("فوکوس روی ورودی!");
+});
+
+input.addEventListener("blur", () => {
+  console.log("فوکوس از ورودی خارج شد!");
+});
+ */
+
+const form = document.createElement("form");
+const inputoo = document.createElement("input");
+const submit = document.createElement("button");
+
+submit.textContent = "ارسال";
+form.appendChild(input);
+form.appendChild(submit);
+document.body.appendChild(form);
+
+form.addEventListener("submit", (event) => {
+  event.preventDefault(); // جلوگیری از ارسال پیش‌فرض فرم
+  console.log("فرم ارسال شد: ", inputoo.value);
+});
