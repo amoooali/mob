@@ -376,7 +376,9 @@ input.addEventListener("blur", () => {
 });
  */
 
-const form = document.createElement("form");
+//--------------------------------------------------
+
+/* const form = document.createElement("form");
 const inputoo = document.createElement("input");
 const submit = document.createElement("button");
 
@@ -389,3 +391,29 @@ form.addEventListener("submit", (event) => {
   event.preventDefault(); // جلوگیری از ارسال پیش‌فرض فرم
   console.log("فرم ارسال شد: ", inputoo.value);
 });
+
+ */
+
+//--------------------------------------------------
+
+const form = document.createElement("form");
+const inputt = document.createElement("input");
+const bot = document.createElement("button");
+
+bot.textContent = "ارسال";
+form.appendChild(inputt);
+form.appendChild(bot);
+document.body.appendChild(form);
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  console.log("form sent", inputt.value);
+});
+
+//--------------------------------------------------
+
+function changeBackgroundColor() {
+  document.body.style.backgroundColor = "lightblue";
+}
+
+//--------------------------------------------------
